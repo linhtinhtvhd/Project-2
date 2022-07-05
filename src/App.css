@@ -163,7 +163,7 @@ font-size: 12px;
     font-size: 16px;
     text-align: center;
 }
-.block{
+.registor-error{
     background-color: rgba(255,69,58,.05);
     color: #ff453a;
     font-size: 14px;
@@ -173,4 +173,3 @@ font-size: 12px;
     box-sizing: border-box;
 
 }
-.none{display: none;}

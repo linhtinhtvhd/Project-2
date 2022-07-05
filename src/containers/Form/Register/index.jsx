@@ -35,6 +35,8 @@ export const RegisterContainer = () => {
     placeholder: 'Nhập lại mật khẩu'
   }]
   const [isname,setIsname] =useState(false)
+  const [isnumberpass,setIsnumberpass]=useState(false)
+  const [isrepass,setRepass] = useState(false)
   const [data, setData] = useState({ fullname: '', email: '', password: '', repassword: '' })
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -43,6 +45,18 @@ export const RegisterContainer = () => {
     }
     else{
       setIsname(false)
+    }
+    if(data.password.length<6 || data.password.length>25){
+      setIsnumberpass(true)
+    }
+    else{
+      setIsnumberpass(false)
+    }
+    if(data.password !== data.repassword){
+      setRepass(true)
+    }
+    else{
+      setRepass(false)
     }
     console.log(data)
   }
@@ -69,7 +83,7 @@ export const RegisterContainer = () => {
               <p className='register-content-top'>Chào mừng bạn đến với CIJS75 </p>
               <p className='register-content-bot'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur quaerat sed sapiente ea quo sit aliquid.</p>
             </div>
-            <div className={ `${isname ? 'block': 'none'} `}>Họ và Tên phải có độ dài từ 2 đến 50 ký tự.</div>
+           { (isname && <div className="registor-error">Họ và Tên phải có độ dài từ 2 đến 50 ký tự.</div>) || (isnumberpass&&<div className="registor-error">Mật khẩu phải từ 6 đến 25 kí tự.</div>) || (isrepass&&<div className="registor-error">Mật khẩu xác nhận chưa đúng</div>)}
             <form action="">
               {register.map((el, index) => {
                 return <Input key={index} typ={el.types} title={el.title}
