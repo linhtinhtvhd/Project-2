@@ -1,8 +1,8 @@
 import React from 'react'
-
+import {LoginContainer} from '../containers/Form/Login'
 function Login() {
   return (
-    <div>Login</div>
+    <LoginContainer/>
   )
 }
 

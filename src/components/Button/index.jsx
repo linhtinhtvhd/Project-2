@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Button = ({handleClick}) => {
+export const Button = ({handleClick,content,color}) => {
   return (
-    <button onClick={handleClick} className='btn'>Đăng kí</button>
+    <button style ={{background:color}} onClick={handleClick} className='btn'>{content}</button>
   )
 }

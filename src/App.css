@@ -14,7 +14,10 @@ body {
 .width50 {
     width: 50%;
 }
-
+.width30{
+    width: 30%;
+    position: relative;
+}
 .register {
     display: flex;
 
@@ -105,9 +108,16 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+.btn:hover{
+    opacity: 0.9;
+}
 .want-login{
     font-size: 14px;
-    margin: 30px 0 40px;
+    margin: 30px 0 30px;
+}
+.want-login p{
+    display: flex;
+    justify-content: space-between;
 }
 .want-login a{
     color: var(--leading-color);
@@ -172,4 +182,22 @@ font-size: 12px;
     margin: 15px 0 30px;
     box-sizing: border-box;
 
+}
+
+.login-different{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-login{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 10%;
+    font-size: 16px;
+    color: #fff;
+    z-index: 2;
+}
+.hoac{
+    text-align: center;
+    font-size: 12px;
 }

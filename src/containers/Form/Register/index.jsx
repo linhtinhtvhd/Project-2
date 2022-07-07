@@ -93,11 +93,12 @@ export const RegisterContainer = () => {
               <p className='register-agree'>
                 Bằng việc đăng ký tài khoản, bạn đã đồng ý với <span>Điều khoản dịch vụ </span> và <span>Chính sách bảo mật </span> của chúng tôi
               </p>
-              <Button handleClick={handleSubmit} />
+              <Button handleClick={handleSubmit} content='Đăng kí'/>
             </form>
             <div className="want-login">
-              <p>Bạn đã có tài khoản?
+              <p>
                 <span>
+                Bạn đã có tài khoản?
                   <a href="https://www.facebook.com/"> Đăng nhập ngay</a>
                 </span>
               </p>
