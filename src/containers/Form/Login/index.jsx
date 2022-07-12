@@ -2,8 +2,44 @@ import React from 'react'
 import { useState } from 'react'
 import { Input } from '../../../components/Input'
 import { Button } from '../../../components/Button'
+import { gql, useMutation } from '@apollo/client';
+
+const SIGN_IN = gql`
+  mutation SignIn($input: SignInInput!) {
+    signIn(data: $input) {
+      account {
+        id
+        identityNumber
+        accountName
+        firstName
+        lastName
+        email
+        birthday
+        phoneNumber
+        role
+        isActive
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      token {
+        accessToken
+      }
+    }
+  }
+`;
 
 export const LoginContainer= () => {
+
+    const [handleLogin, {loading}] = useMutation(SIGN_IN, {
+      onCompleted(data) {
+        console.log(data.signIn.token.accessToken);
+      },
+      onError(err) {
+        console.log(err);
+      },
+    });
+
     const login =[ {
         name: "email",
         types: 'email',
@@ -44,6 +80,11 @@ export const LoginContainer= () => {
       setIsnumberpass(false)
     }
     console.log(data)
+    handleLogin({
+      variables : {
+        input: data
+      }
+    })
   }
   const changeValue = (filed) => (value) => {
     setData({
@@ -77,7 +118,7 @@ export const LoginContainer= () => {
               <p className='register-agree'>
                 Bằng việc đăng ký tài khoản, bạn đã đồng ý với <span>Điều khoản dịch vụ </span> và <span>Chính sách bảo mật </span> của chúng tôi
               </p>
-              <Button handleClick={handleSubmit} content='Đăng nhập'/>
+              <Button handleClick={handleSubmit} content='Dang nhap'  disabled={loading}/>
             </form>
             <p className='hoac'>Hoặc</p>
             <div className="login-different">
