@@ -72,7 +72,7 @@ export const HomeContainer = () => {
                             <div className="home-post">
                                 <div className="header-post">
                                     <div className="infor-user-post">
-                                        <img className='avatar-post' src={require(`../../img/M10.jpg`)} alt="" />
+                                        <img className='avatar-post' src={require(`../../img/Sita.jpg`)} alt="" />
                                         <span>SaTị</span>
                                     </div>
                                     <HiOutlineDotsHorizontal className='icon-header-post' />
@@ -136,7 +136,7 @@ export const HomeContainer = () => {
                             <div className="home-post">
                                 <div className="header-post">
                                     <div className="infor-user-post">
-                                        <img className='avatar-post' src={require(`../../img/M10.jpg`)} alt="" />
+                                        <img className='avatar-post' src={require(`../../img/Sita.jpg`)} alt="" />
                                         <span>SaTị</span>
                                     </div>
                                     <HiOutlineDotsHorizontal className='icon-header-post' />
@@ -200,7 +200,7 @@ export const HomeContainer = () => {
                             <div className="home-post">
                                 <div className="header-post">
                                     <div className="infor-user-post">
-                                        <img className='avatar-post' src={require(`../../img/M10.jpg`)} alt="" />
+                                        <img className='avatar-post' src={require(`../../img/Sita.jpg`)} alt="" />
                                         <span>SaTị</span>
                                     </div>
                                     <HiOutlineDotsHorizontal className='icon-header-post' />
@@ -282,7 +282,7 @@ export const HomeContainer = () => {
                             <div className="right-container">
                                 <div className="can-follow">
                                     <div className="info-follow">
-                                        <img src={require(`../../img/Rido.jpg`)} alt="" />
+                                        <img src={require(`../../img/Rido.png`)} alt="" />
                                         <div className="name-follow">
                                             <p>RiCha</p>
                                             <span>Bố của RiCon</span>
@@ -292,7 +292,7 @@ export const HomeContainer = () => {
                                 </div>
                                 <div className="can-follow">
                                     <div className="info-follow">
-                                        <img src={require(`../../img/Rido.jpg`)} alt="" />
+                                        <img src={require(`../../img/Rido.png`)} alt="" />
                                         <div className="name-follow">
                                             <p>RiCha</p>
                                             <span>Bố của RiCon</span>
@@ -302,7 +302,7 @@ export const HomeContainer = () => {
                                 </div>
                                 <div className="can-follow">
                                     <div className="info-follow">
-                                        <img src={require(`../../img/Rido.jpg`)} alt="" />
+                                        <img src={require(`../../img/Rido.png`)} alt="" />
                                         <div className="name-follow">
                                             <p>RiCha</p>
                                             <span>Bố của RiCon</span>
@@ -312,7 +312,7 @@ export const HomeContainer = () => {
                                 </div>
                                 <div className="can-follow">
                                     <div className="info-follow">
-                                        <img src={require(`../../img/Rido.jpg`)} alt="" />
+                                        <img src={require(`../../img/Rido.png`)} alt="" />
                                         <div className="name-follow">
                                             <p>RiCha</p>
                                             <span>Bố của RiCon</span>
@@ -322,7 +322,7 @@ export const HomeContainer = () => {
                                 </div>
                                 <div className="can-follow">
                                     <div className="info-follow">
-                                        <img src={require(`../../img/Rido.jpg`)} alt="" />
+                                        <img src={require(`../../img/Rido.png`)} alt="" />
                                         <div className="name-follow">
                                             <p>RiCha</p>
                                             <span>Bố của RiCon</span>
@@ -362,8 +362,6 @@ export const HomeContainer = () => {
                                     <a href="https://www.youtube.com/">Ngôn ngữ</a>
                                 </li>
                             </ul>
-
-                            <p>© 2022 INSTAGRAM FROM META</p>
                         </div>
                     </div>
 

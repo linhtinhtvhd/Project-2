@@ -362,8 +362,6 @@ export const HomeContainer = () => {
                                     <a href="https://www.youtube.com/">Ngôn ngữ</a>
                                 </li>
                             </ul>
-
-                            <p>© 2022 INSTAGRAM FROM META</p>
                         </div>
                     </div>
 
